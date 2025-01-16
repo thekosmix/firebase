@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "thekosmix5"
+    "default": "thekosmix5",
+    "strollup": "strollup",
+    "wanderindia": "wanderindia"
   }
 }
