@@ -95,6 +95,45 @@
           ]
         }
       ]
+    },
+    {
+      "site": "kids-scroll",
+      "public": "kids-scroll",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        ".git/**",
+        ".gitignore",
+        ".project",
+        "README.md",
+        "generate-icons.html",
+        "**/ss/**",
+        "**/media/**",
+        "QWEN.md",
+        "Requirements.md",
+        "LICENSE"
+      ],
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=31536000, immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(js|css)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=31536000, immutable"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
