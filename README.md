@@ -2,7 +2,10 @@
 testing out firebase features like hosting, functions, databse, etc
 
 ## hosting 
- - for hosting my [travel blog](https://www.thekosmix.com/)
+ - for hosting my [travel blog](https://www.wanderindia.blog/)
+ - for hosting my [personal blog](https://www.thekosmix.com/)
+ - for hosting my [past venture](https://www.strollup.in/)
+ - for hosting my [current venture](https://www.offlinekidsgames.com/)
 
 ## setup
  - Install firebase-cli and login to it by following [these instructions](https://firebase.google.com/docs/cli)
