@@ -9,6 +9,8 @@
         "**/node_modules/**",
         ".git/**",
         ".gitignore",
+        "QWEN.md",
+        "GEMINI.md",
         ".project"
       ],
       "headers": [
@@ -41,7 +43,9 @@
         "**/node_modules/**",
         ".git/**",
         ".gitignore",
-        ".project"
+        ".project",
+        "QWEN.md",
+        "GEMINI.md"
       ],
       "headers": [
         {
@@ -73,7 +77,9 @@
         "**/node_modules/**",
         ".git/**",
         ".gitignore",
-        ".project"
+        ".project",
+        "QWEN.md",
+        "GEMINI.md"
       ],
       "headers": [
         {
@@ -114,6 +120,7 @@
         "**/ss/**",
         "**/media/**",
         "QWEN.md",
+        "GEMINI.md",
         "Requirements.md",
         "LICENSE"
       ],
