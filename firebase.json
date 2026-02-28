@@ -24,7 +24,7 @@
           ]
         },
         {
-          "source": "**/*.@(js|css)",
+          "source": "**/*.@(js|css|html)",
           "headers": [
             {
               "key": "Cache-Control",
@@ -58,7 +58,7 @@
           ]
         },
         {
-          "source": "**/*.@(js|css)",
+          "source": "**/*.@(js|css|html)",
           "headers": [
             {
               "key": "Cache-Control",
@@ -92,7 +92,7 @@
           ]
         },
         {
-          "source": "**/*.@(js|css)",
+          "source": "**/*.@(js|css|html)",
           "headers": [
             {
               "key": "Cache-Control",
@@ -113,12 +113,6 @@
         ".gitignore",
         ".project",
         "README.md",
-        "generate-icons.html",
-        "generate-pwa-icons.html",
-        "analytics-test.js",
-        "performance-monitor.js",
-        "**/ss/**",
-        "**/media/**",
         "QWEN.md",
         "GEMINI.md",
         "Requirements.md",
@@ -135,7 +129,7 @@
           ]
         },
         {
-          "source": "**/*.@(js|css)",
+          "source": "**/*.@(js|css|html)",
           "headers": [
             {
               "key": "Cache-Control",
