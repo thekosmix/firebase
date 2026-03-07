@@ -138,7 +138,7 @@
           ]
         },
         {
-          "source": "**/*.@(js|css)",
+          "source": "**/*.@(js|css|json)",
           "headers": [
             {
               "key": "Cache-Control",
@@ -147,11 +147,11 @@
           ]
         },
         {
-          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|json)",
+          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "public, max-age=3600"
+              "value": "public, max-age=86400"
             }
           ]
         }
