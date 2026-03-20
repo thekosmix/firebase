@@ -28,7 +28,7 @@
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "public, max-age=31536000, immutable"
+              "value": "public, max-age=604800, immutable"
             }
           ]
         }
@@ -62,7 +62,7 @@
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "public, max-age=31536000, immutable"
+              "value": "public, max-age=604800, immutable"
             }
           ]
         }
@@ -96,7 +96,7 @@
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "public, max-age=31536000, immutable"
+              "value": "public, max-age=604800, immutable"
             }
           ]
         }
@@ -151,7 +151,41 @@
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "public, max-age=86400"
+              "value": "public, max-age=604800, immutable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site": "juniorgenius",
+      "public": "juniorgenius.club",
+      "ignore": [
+        "firebase.json",
+        ".git/**",
+        ".gitignore",
+        ".project",
+        "QWEN.md",
+        "GEMINI.md",
+        "README.md",
+        "nanobanana.txt"
+      ],
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=31536000, immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(js|css|html)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=604800, immutable"
             }
           ]
         }
