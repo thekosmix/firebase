@@ -109,6 +109,7 @@
         "firebase.json",
         "**/.*",
         "**/node_modules/**",
+        "**/app/**",
         ".git/**",
         ".gitignore",
         ".project",
