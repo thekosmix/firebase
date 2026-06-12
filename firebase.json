@@ -119,6 +119,8 @@
         "QWEN.md",
         "GEMINI.md",
         "nanobanana.txt",
+        "**/scripts/**",
+        "reviews.txt",
         "LICENSE"
       ],
       "headers": [
