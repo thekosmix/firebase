@@ -121,7 +121,8 @@
         "nanobanana.txt",
         "**/scripts/**",
         "reviews.txt",
-        "LICENSE"
+        "LICENSE",
+        "video.txt"
       ],
       "headers": [
         {
