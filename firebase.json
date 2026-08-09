@@ -122,7 +122,8 @@
         "**/scripts/**",
         "reviews.txt",
         "LICENSE",
-        "video.txt"
+        "video.txt",
+        ".claude"
       ],
       "headers": [
         {
@@ -153,7 +154,7 @@
           ]
         },
         {
-          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|mp3|wav|ogg)",
+          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|mp3|wav|ogg|gguf|wasm)",
           "headers": [
             {
               "key": "Cache-Control",
