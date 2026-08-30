@@ -120,6 +120,7 @@
         "GEMINI.md",
         "nanobanana.txt",
         "**/scripts/**",
+        "**/app-stores/**",
         "reviews.txt",
         "LICENSE",
         "video.txt",
