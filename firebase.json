@@ -112,6 +112,7 @@
         "**/app/**",
         "**/guideline/**",
         ".git/**",
+        ".githooks/**",
         ".antigravitycli/**",
         ".gitignore",
         ".project",
