@@ -108,52 +108,51 @@
       "ignore": [
         "firebase.json",
         "**/.*",
+        "**/.*/**",
+        "!.well-known/**",
         "**/node_modules/**",
         "**/app/**",
         "**/guideline/**",
-        ".git/**",
-        ".githooks/**",
-        ".antigravitycli/**",
-        ".gitignore",
-        ".project",
-        "README.md",
-        "QWEN.md",
-        "GEMINI.md",
-        "nanobanana.txt",
         "**/scripts/**",
         "**/app-stores/**",
+        "**/credentials/**",
+        "credentials/**",
+        "**/data/**",
+        "data/**",
+        "**/bundles/**",
+        "bundles/**",
+        "**/tests/**",
+        "tests/**",
+        "**/playwright-report/**",
+        "**/test-results/**",
+        "playwright.config.js",
+        "package.json",
+        "package-lock.json",
+        "*.zip",
+        "**/*.md",
+        "nanobanana.txt",
         "reviews.txt",
-        "LICENSE",
         "video.txt",
-        ".claude",
-        ".claude/**",
-        "gtm_strategy_masterplan.md"
+        "LICENSE",
+        "**/.env*",
+        "**/*.key",
+        "**/*.pem"
       ],
       "headers": [
         {
-          "source": "service-worker.js",
+          "source": "**",
           "headers": [
             {
-              "key": "Cache-Control",
-              "value": "no-cache"
-            }
-          ]
-        },
-        {
-          "source": "**/*.html",
-          "headers": [
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
             {
-              "key": "Cache-Control",
-              "value": "no-cache"
-            }
-          ]
-        },
-        {
-          "source": "**/*.@(js|css|json)",
-          "headers": [
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
             {
-              "key": "Cache-Control",
-              "value": "public, max-age=604800, stale-while-revalidate=604800"
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
             }
           ]
         },
@@ -172,6 +171,92 @@
             {
               "key": "Cache-Control",
               "value": "public, max-age=2592000, immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(js|css|json)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=604800, stale-while-revalidate=604800"
+            }
+          ]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "manifest.json",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "service-worker.js",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            }
+          ]
+        },
+        {
+          "source": "/api/**",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        },
+        {
+          "source": "openapi.json",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, OPTIONS"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
             }
           ]
         }
