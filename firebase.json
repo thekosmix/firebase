@@ -37,6 +37,7 @@
     {
       "site": "strollup",
       "public": "strollup.in",
+      "cleanUrls": true,
       "ignore": [
         "firebase.json",
         "**/.*",
