@@ -106,11 +106,29 @@
     {
       "site": "kids-scroll",
       "public": "kids-scroll",
+      "appAssociation": "NONE",
+      "rewrites": [
+        {
+          "source": "/.well-known/assetlinks.json",
+          "destination": "/.well-known/assetlinks.json"
+        }
+      ],
       "ignore": [
         "firebase.json",
-        "**/.*",
-        "**/.*/**",
-        "!.well-known/**",
+        "**/.git",
+        "**/.git/**",
+        "**/.githooks",
+        "**/.githooks/**",
+        "**/.github",
+        "**/.github/**",
+        "**/.antigravitycli",
+        "**/.antigravitycli/**",
+        "**/.claude",
+        "**/.claude/**",
+        "**/.auth",
+        "**/.auth/**",
+        "**/.gitignore",
+        "**/.project",
         "**/node_modules/**",
         "**/app/**",
         "**/guideline/**",
@@ -140,6 +158,23 @@
         "**/*.pem"
       ],
       "headers": [
+        {
+          "source": "/.well-known/assetlinks.json",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=3600, stale-while-revalidate=86400"
+            }
+          ]
+        },
         {
           "source": "**",
           "headers": [
